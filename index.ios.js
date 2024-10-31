@@ -20,7 +20,7 @@ const EffectsViewComponent = (props) => {
     const vibrantNode = vibrantContent ? vibrantContent : <View />;
     const {style, ...nativeProps} = props;
     return (
-        <EffectsView {...nativeProps} style={styles.base, style}>
+        <EffectsView {...nativeProps} style={[styles.base, style]}>
             {vibrantNode}
             {children}
         </EffectsView>
